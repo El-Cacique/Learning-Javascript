@@ -1,0 +1,22 @@
+function chessBoard(num) {
+	var out = ' ';
+	var inn = '#';
+	var board = '';
+		
+		for(i=0;i<num;i++) {
+			for(j=0;j<num/2;j++){
+				if(i%2===0){
+					board += out;
+					board += inn;
+				}else{ 
+					board += inn;
+					board += out;
+				}
+			}	
+			board += "\n";
+		}
+	console.log(board);
+}
+
+
+chessBoard(8);
